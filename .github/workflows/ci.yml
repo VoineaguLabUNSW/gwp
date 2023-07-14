@@ -12,7 +12,7 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v2
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@3b00d34428fa0856a76d6cd4a13f0016067542cb
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

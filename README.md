@@ -1,4 +1,4 @@
-# Katana Documentation
+# GWP Documentation
 
 The new markdown syntax is very different, but allows more complex UI elements like content tabs.
 
