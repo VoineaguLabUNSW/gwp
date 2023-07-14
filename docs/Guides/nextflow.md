@@ -1,5 +1,7 @@
 # Nextflow
 
+## Introduction
+
 Nextflow is a workflow language and executor for reproducible, containerized bioinformatics.
 
 !!! tip

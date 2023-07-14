@@ -1,5 +1,7 @@
 # Experimental Design
 
+## Introduction
+
 The downstream analysis of most RNA-Seq studies involves some form of differential expression - as such, it is important to increase statistical power by decreasing variance using biological and technical replicates. There are no parameters for this!
 
 Even if you already have sequenced data and are confident in your design, terminology in bioinformatics is often re-used. This page is intended to be a concise reference for the most common concepts and terms needed to start running a workflow on Katana - see Melbourne Bioinformatic's [terrific guide](https://www.melbournebioinformatics.org.au/tutorials/tutorials/rna_seq_exp_design/rna_seq_experimental_design/) for a more in-depth discussion.
