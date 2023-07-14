@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Nextflow is a workflow language and executor for reproducible, containerized bioinformatics.
+Nextflow is a workflow language and executor for reproducible, containerized bioinformatics. The following serves as a quick, comparative reference for different ways you can run the same workflow, including ones you write yourself. See e.g. our [Bulk RNA-Seq Guide](./RNA-Seq/bulk.md) or the official [nf-core](https://nf-co.re) site for more in-depth parameter information for any examples.
 
 !!! tip
     Due to Nextflow's intermediate file size requirements, we offer `/srv/scratch/genomicwf` for all BABS users with the limitation that **files are deleted irreversibly after 3 days of not being read**. Within this time-frame, you can `-resume` quickly with modified parameters. If lab scratch is preferred, we encourage the regular use of `nextflow clean`.
