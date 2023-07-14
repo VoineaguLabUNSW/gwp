@@ -1,4 +1,4 @@
-Title: Bulk RNA-Seq
+# Bulk RNA-Seq
 
 Bulk RNA-seq involves sequencing the RNA extracted from a population of cells or tissues as a whole for the purpose of counting, while attempting to maintain proportionality with e.g. actual transcript expression. This is complicated by the need to convert to cDNA for sequancing, various biases and in in eukaryotes - isoforms.
 

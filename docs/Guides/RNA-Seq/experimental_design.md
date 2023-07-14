@@ -1,4 +1,4 @@
-Title: Experimental Design
+# Experimental Design
 
 The downstream analysis of most RNA-Seq studies involves some form of differential expression - as such, it is important to increase statistical power by decreasing variance using biological and technical replicates. There are no parameters for this!
 

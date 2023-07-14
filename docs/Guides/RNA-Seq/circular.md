@@ -1,4 +1,4 @@
-Title: Circular RNA-Seq
+# Circular RNA-Seq
 
 !!! warning
     Unfortunately, `nf-core/circrna` is still considered under development and has been for some time. At least two labs at UNSW focus on circular RNAs - [contact us](../../support.md) if this is important to you.
