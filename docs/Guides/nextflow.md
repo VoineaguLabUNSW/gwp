@@ -15,7 +15,7 @@ New to Katana? You should review the [Katana Guide](./Katana.md) before using an
     === "Katana OnDemand"
         With a few clicks, you can run highly maintained, peer-reviewed nf-core community workflows on Katana OnDemand using a graphical user interface, directly on reads from Ramaciotti.
 
-        1. Access the utility [here](https://kod.restech.unsw.edu.au/pun/usr/z5075661/workflows_beta_4){target=”_blank”}. You must be at UNSW, or be logged in via VPN.
+        1. <s>Access the utility [here](../support.md#contact-the-research-technology-services-team){target=”_blank”}</s>. You must be at UNSW, or be logged in via VPN.
 
         <figure>
             <iframe width="400" height="200" src="https://www.youtube.com/embed/ppmbZKVxj2A" title="Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
