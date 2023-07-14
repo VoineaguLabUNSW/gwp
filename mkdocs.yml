@@ -1,0 +1,58 @@
+site_name: Genomics Workflow Platform Documentation
+theme:
+    name: material
+    # custom_dir: overrides
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          primary: teal
+          #accent: blue
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        # Palette toggle for dark mode
+        - scheme: slate
+          primary: teal
+          #accent: yellow
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+    features:
+        - navigation.footer
+        - navigation.instant
+        #- navigation.expand
+        - navigation.top
+        - announce.dismiss
+        - content.code.annotate
+        - content.tabs.link
+        - content.action.edit
+#extra_css:
+#    - stylesheets/extra.css
+extra:
+    generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+        alternate_style: true 
+  - attr_list
+  - toc:
+        permalink: "¶"
+  - footnotes
+  - def_list
+repo_url: https://github.com/unsw-restech/unsw-restech.github.io
+repo_name: unsw-restech/katana-docs
+plugins:
+    - search
+    - glightbox
+    - markdownextradata: {}
+    #- git-revision-date-localized
+
+extra:
+    base_url: "https://localhost"
+    generator: false

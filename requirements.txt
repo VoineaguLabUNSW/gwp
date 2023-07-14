@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-redirects
+mkdocs-glightbox
+mkdocs-markdownextradata-plugin
+mkdocs-git-revision-date-localized-plugin
