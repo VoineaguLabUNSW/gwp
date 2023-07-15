@@ -9,7 +9,7 @@ Nextflow is a workflow language and executor for reproducible, containerized bio
 
 ## Launching a Workflow
 <!--- https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes -->
-New to Katana? You should review the [Katana Guide](./Katana.md) before using any of the following methods.
+New to Katana? You should review the [Katana Guide](./katana.md) before using any of the following methods.
 
 !!! note "Platform"
     === "Katana OnDemand"

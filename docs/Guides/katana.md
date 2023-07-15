@@ -31,6 +31,3 @@ To get started, you can connect [FileZilla](https://docs.restech.unsw.edu.au/sto
 ### Katana OnDemand
 
 You can run various GUI applications such as RStudio directly from your browser using [Katana OnDemand](https://docs.restech.unsw.edu.au/using_katana/ondemand/). This includes RStudio and the Genomic Workflow Utility.
-
-
-

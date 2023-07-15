@@ -20,14 +20,11 @@ theme:
     features:
         - navigation.footer
         - navigation.instant
-        #- navigation.expand
         - navigation.top
         - announce.dismiss
         - content.code.annotate
         - content.tabs.link
         - content.action.edit
-#extra_css:
-#    - stylesheets/extra.css
 extra:
     generator: false
 markdown_extensions:
@@ -51,23 +48,16 @@ edit_uri: ./edit/main
 plugins:
     - search
     - glightbox
-    - markdownextradata: {}
     - git-revision-date-localized
-
-extra:
-    base_url: "https://localhost"
-    generator: false
-
 nav:
-    - index.md
-    - tool_overview.md
-    - Guides:
-        - Guides/katana.md
-        - Guides/nextflow.md
-        - RNA-Seq:
-            - Guides/RNA-Seq/experimental_design.md
-            - Guides/RNA-Seq/bulk.md
-            - Guides/RNA-Seq/single_cell.md
-            - Guides/RNA-Seq/circular.md
-
-    - support.md
+    - 'index.md'
+    - 'tool_overview.md'
+    - 'Guides':
+        - 'Guides/katana.md'
+        - 'Guides/nextflow.md'
+        - 'RNA-Seq':
+            - 'Guides/RNA-Seq/experimental_design.md'
+            - 'Guides/RNA-Seq/bulk.md'
+            - 'Guides/RNA-Seq/single_cell.md'
+            - 'Guides/RNA-Seq/circular.md'
+    - 'support.md'
