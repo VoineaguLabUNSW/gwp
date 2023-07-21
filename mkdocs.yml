@@ -42,6 +42,9 @@ markdown_extensions:
         permalink: "¶"
   - footnotes
   - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 repo_url: https://github.com/voineagulabunsw/gwp
 repo_name: voineagulabunsw/gwp
 edit_uri: ./edit/main/docs

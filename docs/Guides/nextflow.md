@@ -7,7 +7,7 @@ Nextflow is a workflow language and executor for reproducible, containerized bio
 !!! tip
     Due to Nextflow's intermediate file size requirements, we offer `/srv/scratch/genomicwf` for all BABS users with the limitation that **files are deleted irreversibly after 3 days of not being read**. Within this time-frame, you can `-resume` quickly with modified parameters. If lab scratch is preferred, we encourage the regular use of `nextflow clean`.
 
-## Launching a Workflow
+## Launching Comparison
 <!--- https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes -->
 New to Katana? You should review the [Katana Guide](./katana.md) before using any of the following methods.
 

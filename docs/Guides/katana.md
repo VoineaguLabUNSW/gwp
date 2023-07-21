@@ -28,6 +28,11 @@ The most pertinent step in bioinformatics is copy e.g. .fastq.gz read files to K
 
 To get started, you can connect [FileZilla](https://docs.restech.unsw.edu.au/storage/kdm/#filezilla) directly to the Katana data mover and access all your files described in [storage locations](https://docs.restech.unsw.edu.au/storage/storage_locations/#storage-summary).
 
+### Checking Available Space
+While knowledge of storage location quotas is good when you don't have any existing files, it's important to continuously check remaining space when running large biological workflows that produce a lot of output. Relocating a failed Nextflow run to a different (larger) scratch is easy, but it will re-run every subtask unless a lot of care is taken. 
+
+It is straightforward to use [FileZilla](https://docs.restech.unsw.edu.au/storage/kdm/#filezilla) to check available space. When you login via command-line, the first message will overview current usage (accurate to ~10 minutes) or you can run `df -H`.
+
 ### Katana OnDemand
 
 You can run various GUI applications such as RStudio directly from your browser using [Katana OnDemand](https://docs.restech.unsw.edu.au/using_katana/ondemand/). This includes RStudio and the Genomic Workflow Utility.
