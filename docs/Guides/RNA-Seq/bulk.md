@@ -10,8 +10,8 @@ In this guide, we will use the best-practices Nextflow workflow, *nf-core/rnaseq
 
 The workflow accepts fastq reads, which can be downloaded using the "Import" step of the [Genomic Workflow Utility](../../tool_overview.md). This will also produce a valid samplesheet.csv automatically, but you may want to set the [strandedness](./experimental_design.md#strandedness) column explicitly.
 <p float="middle">
-  <img src="/assets/gwp-import-light.png" width="300" />
-  <img src="/assets/gwp-samplesheet-light.png" width="300" /> 
+  <img src="../../../../assets/gwp-import-light.png" width="300" />
+  <img src="../../../../assets/gwp-samplesheet-light.png" width="300" /> 
 </p>
 
 ## Choosing Parameters
@@ -35,6 +35,6 @@ nf-core/rnaseq can typically take 4 hours for human reads, but this obviously de
 This workflow has singularity containers defined for all tools, so there is no SIF conversion process that might cause out of memory issues on the "head" job. If a cryptic error does occur, always [check how much space is available](../katana.md#checking-available-space) in the output folder first - failing to write a file or read from an expected file can imply this. 
 
 #### Support
-The advantages of using a popular community workflow is that there are many people globally that can help. Contact us at [ResTech](/docs/support.md#contact-the-research-technology-services-team) for specific errors or questions. There is also a [nf-core slack](https://nf-co.re/join#slack) with channels for questions and each workflow.
+The advantages of using a popular community workflow is that there are many people globally that can help. Contact us at [ResTech](../../support.md#contact-the-research-technology-services-team) for specific errors or questions. There is also a [nf-core slack](https://nf-co.re/join#slack) with channels for questions and each workflow.
 
 
