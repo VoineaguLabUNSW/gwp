@@ -26,10 +26,6 @@ For face to face support: [Drop-In Hour](https://research.unsw.edu.au/restech-dr
 
 For questions about [research data at UNSW](https://research.unsw.edu.au/research-data-management-unsw>) - on storage, movement or Data Management Plans, please email the [Research Data Team](mailto:rdm@unsw.edu.au>). If you specifically wish to increase Katana storage allocations, please email the [IT Service Centre](mailto:itservicecentre@unsw.edu.au) - note that such increases are not automatic.
 
-### **Katana System Status and Known Issues**
-
-No known issues at the moment.
-
 ### **Katana Terms of Use**
 
 Any use of Katana is covered by the [Conditions of Use - UNSW ICT Resources](https://www.it.unsw.edu.au/students/policies/agree_to_rules.html). 

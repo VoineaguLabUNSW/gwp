@@ -19,5 +19,5 @@ There are over 75 nf-core community workflows, below are some that we have manua
 
 ## Reproducibility
 
-Nextflow on Katana is configured to use Singularity containers. This means that when you specify an exact version of a pipeline that utilizes containers, identical builds of each software will be used.
+Nextflow on Katana is configured to use Singularity containers. This means that when you specify an exact version of a pipeline that utilises containers, identical builds of each software will be used.
 

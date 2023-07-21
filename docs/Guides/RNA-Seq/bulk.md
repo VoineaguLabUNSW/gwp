@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Bulk RNA-seq involves sequencing the RNA extracted from a population of cells or tissues as a whole for the purpose of counting, while attempting to maintain proportionality with e.g. actual transcript expression. This is complicated by the need to convert to cDNA for sequancing, various biases and in eukaryotes - isoforms.
+Bulk RNA-seq involves sequencing the RNA extracted from a population of cells or tissues as a whole for the purpose of counting, while attempting to maintain proportionality with e.g. actual transcript expression. This is complicated by the need to convert to cDNA for sequencing, various biases and in eukaryotes - isoforms.
 
 In this guide, we will use the best-practices Nextflow workflow, *nf-core/rnaseq* [(view official docs)](https://nf-co.re/rnaseq){target=”_blank”}. You can review alternate ways to run these steps (including command-line, Tower) in the general [Nextflow](../nextflow.md) section - the focus of this page will be on general steps and biological parameters.
 
@@ -21,7 +21,7 @@ The workflow accepts fastq reads, which can be downloaded using the "Import" ste
 
 ## Choosing Parameters
 
-You should carefully read the full parameter list on the [official docs](https://nf-co.re/rnaseq){target=”_blank”}, which may further refer you to specific tool manuals. Below is a tiny subset of frequently used paremeters.
+You should carefully read the full parameter list on the [official docs](https://nf-co.re/rnaseq){target=”_blank”}, which may further refer you to specific tool manuals. Below is a tiny subset of frequently used parameters.
 
 | Parameter | Summary |
 | - | - |
@@ -41,5 +41,3 @@ This workflow has singularity containers defined for all tools, so there is no S
 
 #### Support
 The advantages of using a popular community workflow is that there are many people globally that can help. Contact us at [ResTech](../../support.md#contact-the-research-technology-services-team) for specific errors or questions. There is also a [nf-core slack](https://nf-co.re/join#slack) with channels for questions and each workflow.
-
-

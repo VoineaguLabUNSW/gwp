@@ -1,6 +1,6 @@
 # Tool Overview
 
-## Introduction
+## Motivation
 
 Bioinformatics is an umbrella term that *could* be loosly categorized into two main types of workflows - unique explorative research, performed in R or Jupyter Notebook, and the routine alignment/mapping/QC that often precedes it. The following is concerned with this latter category, since it is shared by multiple labs. 
 

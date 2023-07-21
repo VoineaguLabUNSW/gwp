@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The UNSW on-premise HPC, Katana, is encouraged for Nextflow users and is a good entrypoint for HPC in general. That being said, NCI Gadi also has [official documentation](https://opus.nci.org.au/display/DAE/Nextflow) for running Nextflow, and supports Nextflow Tower using the `Agent` method.
+The UNSW on-premise HPC, Katana, is encouraged for Nextflow users and is a good entry-point for HPC in general. That being said, NCI Gadi also has [official documentation](https://opus.nci.org.au/display/DAE/Nextflow) for running Nextflow, and supports Nextflow Tower using the `Agent` method.
 
 ## Why HPC?
 
