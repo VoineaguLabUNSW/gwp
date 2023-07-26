@@ -1,6 +1,6 @@
-Title: Introduction to the Genomics Workflow Platform (GWP) 
+# Workflow Overview
 
-## 
+## Introduction to the Genomics Workflow Platform (GWP)
 The goal of the Genomics Workflow Platform is to implement commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. 
 “Genomics” is used here in a broad sense, including transcriptomics and epigenomics.
 
@@ -17,9 +17,6 @@ The workflow manager employed by UNSW GWP is **NextFlow**. Its main advantage is
 For more details on nf-core pipelines see [Ewels et al. The nf-core framework for community-curated bioinformatics pipelines. Nature Biotechnology 2022.] (https://www.nature.com/articles/s41587-020-0439-x)  
 
 
-
-
-
 There are over 75 nf-core community workflows, below are some that we have manually tested on Katana. View the full list [here](https://nf-co.re/pipelines) - note [nf-core/proteinfold](https://nf-co.re/proteinfold) is not currently supported, as there are better ways of doing this at UNSW.
 
 <figure markdown>
@@ -27,7 +24,7 @@ There are over 75 nf-core community workflows, below are some that we have manua
 <figcaption>via Katana OnDemand</figcaption>
 </figure>
 
-### Frequently Used
+## Frequently Used
 | Workflow 	| Summary 	| Expected Space* 	| Expected Time* 	| Guide 	|
 |---	|---	|---	|---	|---	|
 | [nf-core/rnaseq](https://nf-co.re/rnaseq){target=”_blank”}	| Turns .fastq files and annotated genome into trimmed and aligned .bam files, detailed multiqc and gene count matrix. You can then perform differential expression in e.g. R. Typically takes around 4 hours and 1-2TB of space for human data. Note [for prokaryotes]( https://nf-co.re/rnaseq/3.12.0/usage#prokaryotic-genome-annotations ). 	| 1-2TB 	| 4hr 	| [Bulk Rna-Seq](./Guides/RNA-Seq/bulk.md) 	|
