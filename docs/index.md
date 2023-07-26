@@ -1,6 +1,11 @@
-Title: Workflow Overview
+Title: Introduction to the Genomics Workflow Platform (GWP) 
 
-## Community Workflows
+## 
+The goal of the Genomics Workflow Platform is to implement commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. “Genomics” is used here in a broad sense, including transcriptomics and epigenomics.![image](https://github.com/VoineaguLabUNSW/gwp/assets/13582215/b61136ad-24a7-477b-b051-6e14f96388bc)
+
+
+
+
 There are over 75 nf-core community workflows, below are some that we have manually tested on Katana. View the full list [here](https://nf-co.re/pipelines) - note [nf-core/proteinfold](https://nf-co.re/proteinfold) is not currently supported, as there are better ways of doing this at UNSW.
 
 <figure markdown>
