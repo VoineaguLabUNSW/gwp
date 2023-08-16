@@ -4,6 +4,9 @@
 The goal of the Genomics Workflow Platform is to implement commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. 
 “Genomics” is used here in a broad sense, including transcriptomics and epigenomics.
 
+![Image title](./assets/gwp-overview.png#only-light)
+![Image title](./assets/gwp-overview-dark.png#only-dark)
+
 ## What is a workflow and why should you use it?
 Workflows are data analysis pipelines implemented using a workflow manager. In general, workflow managers simplify the use of complex pipelines composed of multiple software tools by handling software installation and versions and optimizing the use of computing resources. Implementing pipelines as workflows on the UNSW HPC has the following advantages:
 
@@ -13,7 +16,7 @@ Workflows are data analysis pipelines implemented using a workflow manager. In g
 
 For more details on the goals and advantages of bioinformatics workflows see: [Wratten et al. Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers. Nature Methods 2021.](https://www.nature.com/articles/s41592-021-01254-9)
  
-The workflow manager employed by UNSW GWP is **NextFlow**. Its main advantage is the fact that it has been broadly adopted by the bioinformatics community with bioinformatics protocols often published as NextFlow workflows, and an active community developing open-source bioinformatics pipelines that aim to implement the best practice in the field, called **Next Flow Core (nf-core)**.
+The workflow manager employed by UNSW GWP is **Nextflow**. Its main advantage is the fact that it has been broadly adopted by the bioinformatics community with bioinformatics protocols often published as Nextflow workflows, and an active community developing open-source bioinformatics pipelines that aim to implement the best practice in the field, called **Nextflow Core (nf-core)**.
 For more details on nf-core pipelines see [Ewels et al. The nf-core framework for community-curated bioinformatics pipelines. Nature Biotechnology 2022.] (https://www.nature.com/articles/s41587-020-0439-x)  
 
 
