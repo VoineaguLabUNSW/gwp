@@ -1,10 +1,22 @@
-# Katana
+# Getting Started
 
-## Introduction
+![Image title](./assets/gwp-comparison.svg#only-light)
+![Image title](./assets/gwp-comparison-dark.svg#only-dark)
+
+## Choosing an Interface
+
+For a practical overview of each method, see the [launching comparison](./Guides/nextflow.md#launching-comparison)
+
+|| Genomic Workflow Utility | Nextflow Tower | Command-line |
+| -- | -- | -- | -- |
+| Fast access of reads generated at Ramaciotti | :material-check-bold: | :octicons-x-16: | :octicons-x-16: |
+| Parameter input | UI | UI | nf-params.json |
+| Remote monitoring | Intermediate | Advanced | :octicons-x-16: |
+| Initial configuration | None | Difficult, use Genomic Workflow Utility sidebar | Load module |
+
+## Why focus on HPC?
 
 The UNSW on-premise HPC, Katana, is encouraged for Nextflow users and is a good entry-point for HPC in general. That being said, NCI Gadi also has [official documentation](https://opus.nci.org.au/display/DAE/Nextflow) for running Nextflow, and supports Nextflow Tower using the `Agent` method.
-
-## Why HPC?
 
 Once you have covered the basics of Nextflow, it is trivial to run workflows using the `local` executor. This is especially true with prokaryotic genomes. In fact, aside from genome indexing, only a few steps in RNA-Seq consistently require over 16GB RAM for human reads. If you are new to HPC, we still think it's worth learning the basics so that:
 
@@ -12,7 +24,7 @@ Once you have covered the basics of Nextflow, it is trivial to run workflows usi
 2. Runtime is no longer dependant on **number of samples**
 3. It's much easier to receive technical **support**
 
-## Getting Started
+## Katana Basics
 
 Refer to the [official documentation](https://docs.restech.unsw.edu.au/using_katana/accessing_katana/) for account creation. The following will be a subset of the official site, intended for biologists.
 
@@ -36,3 +48,7 @@ It is straightforward to use [FileZilla](https://docs.restech.unsw.edu.au/storag
 ### Katana OnDemand
 
 You can run various GUI applications such as RStudio directly from your browser using [Katana OnDemand](https://docs.restech.unsw.edu.au/using_katana/ondemand/). This includes RStudio and the Genomic Workflow Utility.
+
+
+## Genomic Workflow Utility
+## Nextflow Tower

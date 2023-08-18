@@ -8,7 +8,7 @@ In this guide, we will use the best-practices Nextflow workflow, *nf-core/rnaseq
 
 ## Importing your Data
 
-The workflow accepts fastq reads, which can be downloaded using the "Import" step of the [Genomic Workflow Utility](../../tool_overview.md). This will also produce a valid samplesheet.csv automatically, but you may want to set the [strandedness](./experimental_design.md#strandedness) column explicitly.
+The workflow accepts fastq reads, which can be downloaded using the "Import" step of the [Genomic Workflow Utility](../../getting_started.md). This will also produce a valid samplesheet.csv automatically, but you may want to set the [strandedness](./experimental_design.md#strandedness) column explicitly.
 
 <figure markdown>
 ![Image title](../../assets/gwp-import-light.png){ width="400" }

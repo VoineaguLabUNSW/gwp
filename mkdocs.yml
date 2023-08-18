@@ -54,9 +54,8 @@ plugins:
     - git-revision-date-localized
 nav:
     - 'index.md'
-    - 'tool_overview.md'
+    - 'getting_started.md'
     - 'Guides':
-        - 'Guides/katana.md'
         - 'Guides/nextflow.md'
         - 'RNA-Seq':
             - 'Guides/RNA-Seq/experimental_design.md'
