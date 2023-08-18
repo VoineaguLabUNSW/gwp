@@ -1,3 +1,5 @@
+# Genomics Workflow Platform
+
 # UNSW Workflow Platform 
 The UNSW Workflow Platform (WP) implements commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. 
 

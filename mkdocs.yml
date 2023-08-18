@@ -1,4 +1,4 @@
-site_name: Genomics Workflow Platform Documentation
+site_name: UNSW Workflow Platform
 theme:
     name: material
     # custom_dir: overrides
