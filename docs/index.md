@@ -5,7 +5,7 @@ The goal of the Workflow Platform is to implement commonly used pipelines for th
 ![Image title](./assets/gwp-overview.png#only-light)
 ![Image title](./assets/gwp-overview-dark.png#only-dark)
 
-## What is a workflow and why should you use it?
+## What are workflows and why are they useful?
 Workflows are data analysis pipelines implemented using a workflow manager. In general, workflow managers simplify the use of complex pipelines composed of multiple software tools by handling software installation and versions and optimizing the use of computing resources. Implementing pipelines as workflows on the UNSW HPC has the following advantages:
 
 1.	Shareability. Pipelines implemented as workflows are easy to share and use by any UNSW research group since the software installation and version management are handled by the workflow manager.
