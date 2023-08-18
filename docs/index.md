@@ -1,6 +1,5 @@
-# Workflow Overview
+# Overview
 
-## Introduction to the Genomics Workflow Platform (GWP)
 The goal of the Genomics Workflow Platform is to implement commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. 
 “Genomics” is used here in a broad sense, including transcriptomics and epigenomics.
 
