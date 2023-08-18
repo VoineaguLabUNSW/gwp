@@ -15,7 +15,7 @@ The workflow manager employed by UNSW WP is **Nextflow**. Its main advantage is 
 For more details on **nf-core pipelines** see [Ewels et al. The nf-core framework for community-curated bioinformatics pipelines. Nature Biotechnology 2022.] (https://www.nature.com/articles/s41587-020-0439-x)  
 
 ![Image title](./assets/gwp-overview.svg#only-light)
-![Image title](./assets/gwp-overview-dark.png#only-dark)
+![Image title](./assets/gwp-overview-dark.svg#only-dark)
 
 ## Which Pipelines are Available?
 The analysis of next-generation sequencing (NGS) data, regardless of its type, has two main stages:
