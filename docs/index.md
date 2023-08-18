@@ -2,7 +2,7 @@
 
 The UNSW Workflow Platform implements commonly used pipelines for the analysis of next-generation sequencing data on the UNSW High-Performance Computing (HPC) Infrastructure. 
 
-## What are workflows and why are they useful?
+## Why are Workflows Useful?
 Workflows are data analysis pipelines implemented using a workflow manager. In general, workflow managers simplify the use of complex pipelines composed of multiple software tools by handling software installation and versions and optimizing the use of computing resources. Implementing pipelines as workflows on the UNSW HPC has the following advantages:
 
 1.	**Shareability** Pipelines implemented as workflows are easy to share and use by any UNSW research group since the software installation and version management are handled by the workflow manager.
@@ -16,3 +16,19 @@ For more details on **nf-core pipelines** see [Ewels et al. The nf-core framewor
 
 ![Image title](./assets/gwp-overview.svg#only-light)
 ![Image title](./assets/gwp-overview-dark.png#only-dark)
+
+## Which Pipelines are Available?
+The analysis of next-generation sequencing (NGS) data, regardless of its type, has two main stages:
+
+- **Stage 1:** alignment of sequencing reads to the reference genome, feature quantification, and quality 
+control assessments. 
+- **Stage 2:** extracting biological information from the quantified features by differential expression analyses 
+or co-expression networks (RNA-seq), differential accessibility (ATAC-seq), identification of differentially 
+methylated regions (BS-seq) etc.
+
+The Workflow Platform is focused on implementing pipelines for the first stage of NGS data 
+analysis which is computationally intensive, requires larger storage space and more advanced 
+coding skills, and can be easily automated.  It is not focused on the second stage, which requires fine-
+tuning of data analysis in a project-specific manner, and can often be carried out on a personal laptop with
+basic bioinformatics skills (eg. R/Bioconductor). We do however suggest good options for some common 
+downstream analyses for students with limited coding experience
