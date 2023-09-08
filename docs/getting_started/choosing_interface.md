@@ -1,11 +1,27 @@
-## Nextflow
+# Choosing an Interface
+
+![Image title](../assets/gwp-comparison.svg#only-light)
+![Image title](../assets/gwp-comparison-dark.svg#only-dark)
+
+## Feature Comparison
+
+For a practical overview of each method, see the [launching comparison](./Guides/nextflow.md#launching-comparison)
+
+|| Genomic Workflow Utility | Nextflow Tower | Command-line |
+| -- | -- | -- | -- |
+| Fast access of reads generated at Ramaciotti | :material-check-bold: | :octicons-x-16: | :octicons-x-16: |
+| Parameter input | UI | UI | nf-params.json |
+| Remote monitoring | Intermediate | Advanced | :octicons-x-16: |
+| Initial configuration | None | Use Genomic Workflow Utility sidebar | Load module |
+
+
+## Launching Comparison
 
 Nextflow is a workflow language and executor for reproducible, containerized bioinformatics. The following serves as a quick, comparative reference for different ways you can run the same workflow, including ones you write yourself. See e.g. our [Bulk RNA-Seq Guide](./RNA-Seq/bulk.md) or the official [nf-core](https://nf-co.re) site for more in-depth parameter information for any examples.
 
 !!! tip
     Due to Nextflow's intermediate file size requirements, we offer `/srv/scratch/genomicwf` for all BABS users with the limitation that **files are deleted irreversibly after 3 days of not being read**. Within this time-frame, you can `-resume` quickly with modified parameters. If lab scratch is preferred, we encourage the regular use of `nextflow clean`.
 
-## Launching Comparison
 <!--- https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes -->
 New to Katana? You should review the [Katana Guide](./katana.md) before using any of the following methods.
 
@@ -78,10 +94,9 @@ New to Katana? You should review the [Katana Guide](./katana.md) before using an
 
         We currently do not support group workspaces, as sharing login credentials is against the Katana usage policy.
 
+## Resource Optimization Comparison (Advanced)
 
-## Resources (Advanced)
-
-The default allocations from nf-core community workflows are extremely generous for most datasets - this may negatively impact your queue priority and run duration. If your input files are reasonably similar, you should consider configuring each process based on measurements.
+The default allocations for generalized Nextflow workflows are extremely generous for most datasets - this may negatively impact your queue priority and run duration. If your input files are reasonably similar, you should consider configuring each process based on measurements.
 
 !!! note "Optimization"
     === "Katana OnDemand"

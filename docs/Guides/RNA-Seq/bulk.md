@@ -34,10 +34,26 @@ You should carefully read the full parameter list on the [official docs](https:/
     
 ## Running the Workflow
 
-nf-core/rnaseq can typically take 4 hours for human reads, but this obviously depends greatly on read depth / size of each fastq file. See the [frequently used](../../index.md#frequently-used) table for more metrics.
+nf-core/rnaseq can typically take 4 hours for human reads, but this obviously depends greatly on read depth / size of each fastq file. See the [frequently used](../../overview.md#frequently-used) table for more metrics.
 
-#### Common Errors
-This workflow has singularity containers defined for all tools, so there is no SIF conversion process that might cause out of memory issues on the "head" job. If a cryptic error does occur, always [check how much space is available](../katana.md#checking-available-space) in the output folder first - failing to write a file or read from an expected file can imply this. 
+### Common Errors
+#### 1. Out of space
+    
+e.g. `Failed to write...`, `File does not exist`
 
-#### Support
+If a cryptic filesystem error occurs, always [check how much space is available](../../getting_started.md#checking-available-space) in the output folder first - failing to write a file or read from an expected file can imply this. 
+
+#### 2. Out of memory
+    
+e.g. `java.lang.OutOfMemoryError: Java heap space`
+
+Subtasks will be retried if they run out of memory, but the main Nextflow job will fail - this should not happen with bulk RNA-Seq, since it's usually when docker containers need to be converted to SIF.
+
+#### 3. Missing parameter
+
+`Genome fasta file not specified with e.g. '--fasta genome.fa' or via a detectable config file.`
+
+Happens more than it should because "fasta" isn't a required field. For interfaces, the genome/fasta/gtf/gff fields are under "Reference genome options", refer to the [Choosing Parameters](#choosing-parameters).
+
+### Support
 The advantages of using a popular community workflow is that there are many people globally that can help. Contact us at [ResTech](../../support.md#contact-the-research-technology-services-team) for specific errors or questions. There is also a [nf-core slack](https://nf-co.re/join#slack) with channels for questions and each workflow.

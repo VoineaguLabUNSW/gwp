@@ -1,7 +1,7 @@
 site_name: UNSW Workflow Platform
 theme:
     name: material
-    # custom_dir: overrides
+    custom_dir: overrides
     palette:
         # Palette toggle for light mode
         - scheme: default
@@ -18,6 +18,8 @@ theme:
               icon: material/brightness-4
               name: Switch to light mode
     features:
+        - navigation.sections
+        - navigation.tabs
         - navigation.footer
         - navigation.instant
         - navigation.top
@@ -25,6 +27,7 @@ theme:
         - content.code.annotate
         - content.tabs.link
         - content.action.edit
+        - header.autohide
 extra:
     generator: false
 markdown_extensions:
@@ -37,6 +40,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
         alternate_style: true 
+        slugify: !!python/object/apply:pymdownx.slugs.slugify
+            kwds:
+                case: lower
   - attr_list
   - toc:
         permalink: "¶"
@@ -54,12 +60,18 @@ plugins:
     - git-revision-date-localized
 nav:
     - 'index.md'
-    - 'getting_started.md'
+    - 'Getting Started':
+        - 'getting_started/katana_basics.md'
+        - 'getting_started/choosing_interface.md'
+        - 'Interfaces':
+            - 'getting_started/interfaces/genomic_workflow_utility.md'
+            - 'getting_started/interfaces/cli.md'
+            - 'getting_started/interfaces/tower.md'
     - 'Guides':
-        - 'Guides/nextflow.md'
+        - 'guides/nextflow.md'
         - 'RNA-Seq':
-            - 'Guides/RNA-Seq/experimental_design.md'
-            - 'Guides/RNA-Seq/bulk.md'
-            - 'Guides/RNA-Seq/single_cell.md'
-            - 'Guides/RNA-Seq/circular.md'
+            - 'guides/RNA-Seq/bulk.md'
+            - 'guides/RNA-Seq/single_cell.md'
+            - 'guides/RNA-Seq/circular.md'
+            - 'guides/RNA-Seq/experimental_design.md'
     - 'support.md'
