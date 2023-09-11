@@ -68,6 +68,6 @@ nav:
         - 'getting_started/first_steps.md'
         - 'getting_started/choosing_interface.md'
     - 'Guides':
-        - 'guides/nf_core_rnaseq.md'
-        - 'guides/managing_resources.md'
+        - 'guide/nf_core_rnaseq.md'
+        - 'guide/managing_resources.md'
     - 'support.md'
