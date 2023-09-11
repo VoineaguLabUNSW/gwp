@@ -1,4 +1,4 @@
-# Bulk RNA-Seq
+# Running nf-core/RNA-Seq
 
 ## Introduction
 
