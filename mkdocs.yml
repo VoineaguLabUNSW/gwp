@@ -1,18 +1,20 @@
-site_name: UNSW Workflow Platform
+site_name: Seq-flow Platform
 theme:
     name: material
     custom_dir: overrides
     palette:
         # Palette toggle for light mode
         - scheme: default
-          primary: teal
+          primary: custom
+          #primary: teal
           #accent: blue
           toggle:
               icon: material/brightness-7
               name: Switch to dark mode
         # Palette toggle for dark mode
         - scheme: slate
-          primary: teal
+          primary: custom
+          #primary: teal
           #accent: yellow
           toggle:
               icon: material/brightness-4
@@ -28,6 +30,8 @@ theme:
         - content.tabs.link
         - content.action.edit
         - header.autohide
+extra_css:
+    - stylesheets/extra.css
 extra:
     generator: false
 markdown_extensions:
@@ -61,17 +65,9 @@ plugins:
 nav:
     - 'index.md'
     - 'Getting Started':
-        - 'getting_started/katana_basics.md'
+        - 'getting_started/first_steps.md'
         - 'getting_started/choosing_interface.md'
-        - 'Interfaces':
-            - 'getting_started/interfaces/genomic_workflow_utility.md'
-            - 'getting_started/interfaces/cli.md'
-            - 'getting_started/interfaces/tower.md'
     - 'Guides':
-        - 'guides/nextflow.md'
-        - 'RNA-Seq':
-            - 'guides/RNA-Seq/bulk.md'
-            - 'guides/RNA-Seq/single_cell.md'
-            - 'guides/RNA-Seq/circular.md'
-            - 'guides/RNA-Seq/experimental_design.md'
+        - 'guides/managing_resources.md'
+        - 'guides/nf_core_rnaseq.md'
     - 'support.md'

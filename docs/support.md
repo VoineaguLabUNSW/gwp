@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Support
 
 ### **Contact the Research Technology Services team**

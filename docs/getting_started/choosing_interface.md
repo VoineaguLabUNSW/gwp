@@ -1,5 +1,7 @@
 # Choosing an Interface
 
+All interfaces are based on Nextflow. Nextflow is a workflow language and executor for reproducible, containerized bioinformatics. The following serves as a quick, comparative reference for different ways you can run the same workflow, including ones you write yourself. See e.g. our [Bulk RNA-Seq Guide](./RNA-Seq/bulk.md) or the official [nf-core](https://nf-co.re) site for more in-depth parameter information for any examples.
+
 ![Image title](../assets/gwp-comparison.svg#only-light)
 ![Image title](../assets/gwp-comparison-dark.svg#only-dark)
 
@@ -12,7 +14,7 @@ For a practical overview of each method, see the [launching comparison](./Guides
 | Fast access of reads generated at Ramaciotti | :material-check-bold: | :octicons-x-16: | :octicons-x-16: |
 | Parameter input | UI | UI | nf-params.json |
 | Remote monitoring | Intermediate | Advanced | :octicons-x-16: |
-| Initial configuration | None | Use Genomic Workflow Utility sidebar | Load module |
+| Initial configuration | None | Recommended: use<br>Genomic Workflow Utility sidebar | module load |
 
 
 ## Launching Comparison
@@ -25,14 +27,14 @@ Nextflow is a workflow language and executor for reproducible, containerized bio
 <!--- https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes -->
 New to Katana? You should review the [Katana Guide](./katana.md) before using any of the following methods.
 
-!!! note "Platform"
+!!! abstract "Platform"
     === "Katana OnDemand"
         With a few clicks, you can run highly maintained, peer-reviewed nf-core community workflows on Katana OnDemand using a graphical user interface, directly on reads from Ramaciotti.
 
         1. <s>Access the utility [here](../support.md#contact-the-research-technology-services-team){target=”_blank”}</s>. You must be at UNSW, or be logged in via VPN.
 
         <figure>
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/ppmbZKVxj2A" title="Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/XMAy-6ANAb0?si=Bw_8p_7mx1FJgc7-" title="Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>Demonstrating initial steps of RNA-Seq</figcaption>
         </figure>
 
@@ -98,7 +100,7 @@ New to Katana? You should review the [Katana Guide](./katana.md) before using an
 
 The default allocations for generalized Nextflow workflows are extremely generous for most datasets - this may negatively impact your queue priority and run duration. If your input files are reasonably similar, you should consider configuring each process based on measurements.
 
-!!! note "Optimization"
+!!! example  "Optimization"
     === "Katana OnDemand"
         See video in [Launching a Workflow](#launching_a_workflow) - the graphical interface interactively encourages the process described in "Command-Line".
     === "Command-Line"
