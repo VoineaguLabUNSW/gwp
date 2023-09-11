@@ -1,0 +1,45 @@
+:root {
+    --md-primary-fg-color:        #FFE600;
+    --md-primary-bg-color: #1a1a1a;
+    --md-primary-fg-color--dark:  #FFE600;
+  }
+
+hr {
+    border-width: 5px;
+    background-color: var(--md-primary-fg-color)
+}
+
+  .md-typeset p > a, .md-nav__item .md-nav__link--active {
+    color: rgb(69, 112, 190);
+  }
+
+#md_logo {
+    content: url("../assets/logo.png")
+}
+
+/*[data-md-color-scheme="slate"] #md_logo {
+    content: url("../assets/logo_dark.png")
+}*/
+
+.md-typeset .admonition, .md-typeset details {
+    font-size: 0.8rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container .md-button {
+flex: 1;
+max-width: 200px; /* Adjust the width as needed */
+text-align: center;
+margin: 0 10px; /* Adjust the spacing as needed */
+}
+  
+
+/* Narrower heading text */
+.md-nav--primary .md-nav__title[for=__drawer],
+.md-header__topic:first-child {
+  font-weight: 100;
+}

@@ -1,0 +1,880 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../first_steps/">
+      
+      
+        <link rel="next" href="../../guide/nf_core_rnaseq/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Choosing an Interface - Seq-flow Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#choosing-an-interface" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+    This documentation is still in preview
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Seq-flow Platform" class="md-header__button md-logo" aria-label="Seq-flow Platform" data-md-component="logo">
+      <!-- Logo -->
+<img id="md_logo" src="" alt="logo" />
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seq-flow Platform
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Choosing an Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/voineagulabunsw/gwp" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    voineagulabunsw/gwp
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Overview
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../first_steps/" class="md-tabs__link md-tabs__link--active">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guide/nf_core_rnaseq/" class="md-tabs__link">
+        Guides
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../support/" class="md-tabs__link">
+      Support
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Seq-flow Platform" class="md-nav__button md-logo" aria-label="Seq-flow Platform" data-md-component="logo">
+      <!-- Logo -->
+<img id="md_logo" src="" alt="logo" />
+    </a>
+    Seq-flow Platform
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/voineagulabunsw/gwp" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    voineagulabunsw/gwp
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first_steps/" class="md-nav__link">
+        First Steps
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Choosing an Interface
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Choosing an Interface
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-comparison" class="md-nav__link">
+    Feature Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-comparison" class="md-nav__link">
+    Launching Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-optimization-comparison-advanced" class="md-nav__link">
+    Resource Optimization Comparison (Advanced)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/nf_core_rnaseq/" class="md-nav__link">
+        Running nf-core/RNA-Seq
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/managing_resources/" class="md-nav__link">
+        Managing Resources - Time/Memory/Space
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-comparison" class="md-nav__link">
+    Feature Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-comparison" class="md-nav__link">
+    Launching Comparison
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-optimization-comparison-advanced" class="md-nav__link">
+    Resource Optimization Comparison (Advanced)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/voineagulabunsw/gwp/edit/main/docs/getting_started/choosing_interface.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+
+<h1 id="choosing-an-interface">Choosing an Interface<a class="headerlink" href="#choosing-an-interface" title="Permanent link">¶</a></h1>
+<p>All interfaces are based on Nextflow. Nextflow is a workflow language and executor for reproducible, containerized bioinformatics. The following serves as a quick, comparative reference for different ways you can run the same workflow, including ones you write yourself. See e.g. our <a href="./RNA-Seq/bulk.md">Bulk RNA-Seq Guide</a> or the official <a href="https://nf-co.re">nf-core</a> site for more in-depth parameter information for any examples.</p>
+<p><a class="glightbox" href="../../assets/gwp-comparison.svg#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../assets/gwp-comparison.svg#only-light" /></a>
+<a class="glightbox" href="../../assets/gwp-comparison-dark.svg#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../assets/gwp-comparison-dark.svg#only-dark" /></a></p>
+<h2 id="feature-comparison">Feature Comparison<a class="headerlink" href="#feature-comparison" title="Permanent link">¶</a></h2>
+<p>For a practical overview of each method, see the <a href="./Guides/nextflow.md#launching-comparison">launching comparison</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Genomic Workflow Utility</th>
+<th>Nextflow Tower</th>
+<th>Command-line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fast access of reads generated at Ramaciotti</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 20.42-6.21-6.21 2.83-2.83L9 14.77l9.88-9.89 2.83 2.83L9 20.42Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
+</tr>
+<tr>
+<td>Parameter input</td>
+<td>UI</td>
+<td>UI</td>
+<td>nf-params.json</td>
+</tr>
+<tr>
+<td>Remote monitoring</td>
+<td>Intermediate</td>
+<td>Advanced</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
+</tr>
+<tr>
+<td>Initial configuration</td>
+<td>None</td>
+<td>Recommended: use<br>Genomic Workflow Utility sidebar</td>
+<td>module load</td>
+</tr>
+</tbody>
+</table>
+<h2 id="launching-comparison">Launching Comparison<a class="headerlink" href="#launching-comparison" title="Permanent link">¶</a></h2>
+<p>Nextflow is a workflow language and executor for reproducible, containerized bioinformatics. The following serves as a quick, comparative reference for different ways you can run the same workflow, including ones you write yourself. See e.g. our <a href="./RNA-Seq/bulk.md">Bulk RNA-Seq Guide</a> or the official <a href="https://nf-co.re">nf-core</a> site for more in-depth parameter information for any examples.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Due to Nextflow's intermediate file size requirements, we offer <code>/srv/scratch/genomicwf</code> for all BABS users with the limitation that <strong>files are deleted irreversibly after 3 days of not being read</strong>. Within this time-frame, you can <code>-resume</code> quickly with modified parameters. If lab scratch is preferred, we encourage the regular use of <code>nextflow clean</code>.</p>
+</div>
+<!--- https://www.docsy.dev/docs/adding-content/shortcodes/#tabbed-panes -->
+<p>New to Katana? You should review the <a href="./katana.md">Katana Guide</a> before using any of the following methods.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Platform</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="katana-ondemand" name="__tabbed_1" type="radio" /><input id="command-line" name="__tabbed_1" type="radio" /><input id="nextflow-tower" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="katana-ondemand">Katana OnDemand</label><label for="command-line">Command-Line</label><label for="nextflow-tower">Nextflow Tower</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>With a few clicks, you can run highly maintained, peer-reviewed nf-core community workflows on Katana OnDemand using a graphical user interface, directly on reads from Ramaciotti.</p>
+<ol>
+<li><s>Access the utility <a href="../../support/#contact-the-research-technology-services-team" target="”_blank”">here</a></s>. You must be at UNSW, or be logged in via VPN.</li>
+</ol>
+<p><figure>
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/XMAy-6ANAb0?si=Bw_8p_7mx1FJgc7-" title="Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption>Demonstrating initial steps of RNA-Seq</figcaption>
+</figure></p>
+<ol>
+<li>(Optional) To uninstall, delete ~/ondemand/data/workflows_beta_4, and any datasets/runs you created</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>The following instructions can be applied for community workflows or your own:</p>
+<ol>
+<li>
+<p>Connect via ssh
+    <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>&lt;zid&gt;@kdm.restech.unsw.edu.au<span class="w"> </span><span class="c1"># (1)!</span>
+</code></pre></div></p>
+<ol>
+<li>It's best to use the Katana Data Mover node especially for step 3.</li>
+</ol>
+</li>
+<li>
+<p>Create and enter a new project folder
+    <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>/srv/scratch/genomicwf/<span class="nv">$USER</span>/myproject<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$_</span><span class="w">  </span><span class="c1"># (1)!</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/WalshKieran/katana-rnaseq-start.git<span class="w"> </span>.<span class="w"> </span><span class="c1"># (2)!</span>
+</code></pre></div></p>
+<ol>
+<li>Files stored in the "genomicwf" scratch are deleted if unused for 3 days. Nextflow working directories can exceed 1TB, but you may wish to try different parameters without recomputing everything within this timeframe.</li>
+<li>This copies a PBS batch template into your project folder. It will fail if there are any files already present.</li>
+</ol>
+</li>
+<li>
+<p>(Optional) Download your data from Ramaciotti and create samplesheet:
+    <div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-qO-<span class="w"> </span>https://mydata.ramaciotti...MYDATA1234.tar<span class="w"> </span><span class="p">|</span><span class="w"> </span>tar<span class="w"> </span>xvz<span class="w"> </span>-C<span class="w"> </span>./mydata1234<span class="w"> </span><span class="c1"># (1)!</span>
+wget<span class="w"> </span>https://raw.githubusercontent.com/nf-core/rnaseq/master/bin/fastq_dir_to_samplesheet.py
+python3<span class="w"> </span>fastq_dir_to_samplesheet.py<span class="w"> </span>--recursive<span class="w"> </span>./mydata1234<span class="w"> </span>./samplesheet.csv
+</code></pre></div></p>
+<ol>
+<li>Follow the instructions from Ramaciotti - if access is via BaseSpace or a non-tar share link, you can use the "Katana OnDemand" utility to download.</li>
+</ol>
+</li>
+<li>
+<p>Launch and monitor
+    <div class="highlight"><pre><span></span><code>qsub<span class="w"> </span>run.pbs
+qstat<span class="w"> </span>-u<span class="w"> </span><span class="nv">$USER</span>
+tail<span class="w"> </span>.nextflow.log
+</code></pre></div></p>
+</li>
+<li>
+<p>(Optional) Stop your job
+    <div class="highlight"><pre><span></span><code>qsig<span class="w"> </span>&lt;ID<span class="w"> </span>returned<span class="w"> </span>from<span class="w"> </span>qsub&gt;<span class="w"> </span><span class="c1"># (1)!</span>
+</code></pre></div></p>
+<ol>
+<li>Why not qdel? When exiting, Nextflow waits for all child jobs to exit - this can take more time than qdel allows.</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Nextflow Tower is a more advanced interface for launching and monitoring Nextflow workflows, but you will need to move data on and off Katana yourself using the Katana Data Mover.</p>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Tower is still slightly incompatible with Katana as of June 20, 2023.</p>
+</div>
+<p>One-off setup:</p>
+<ol>
+<li>Create a Tower account at <a href="https://tower.nf">https://tower.nf</a>.</li>
+<li>Navigate to <a href="https://tower.nf/tokens">https://tower.nf/tokens</a>, create and copy an access token.</li>
+<li>Paste your token into the "Katana OnDemand" workflow utility sidebar to automatically add Katana credentials/compute and even nf-core community workflows to your Tower personal workspace.</li>
+</ol>
+<p>We currently do not support group workspaces, as sharing login credentials is against the Katana usage policy.</p>
+</div>
+</div>
+</div>
+</div>
+<h2 id="resource-optimization-comparison-advanced">Resource Optimization Comparison (Advanced)<a class="headerlink" href="#resource-optimization-comparison-advanced" title="Permanent link">¶</a></h2>
+<p>The default allocations for generalized Nextflow workflows are extremely generous for most datasets - this may negatively impact your queue priority and run duration. If your input files are reasonably similar, you should consider configuring each process based on measurements.</p>
+<div class="admonition example">
+<p class="admonition-title">Optimization</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="katana-ondemand_1" name="__tabbed_2" type="radio" /><input id="command-line_1" name="__tabbed_2" type="radio" /><input id="nextflow-tower_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="katana-ondemand_1">Katana OnDemand</label><label for="command-line_1">Command-Line</label><label for="nextflow-tower_1">Nextflow Tower</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>See video in <a href="#launching_a_workflow">Launching a Workflow</a> - the graphical interface interactively encourages the process described in "Command-Line".</p>
+</div>
+<div class="tabbed-block">
+<p>Below is an illustration of how to run nf-core/rnaseq without previous similar runs (e.g. similar or greater read depth). This is not a substitute for reading the <a href="https://github.com/WalshKieran/nf-optimizer">nf-optimizer</a> documentation/drawbacks carefully.</p>
+<ol>
+<li>
+<p>Limit the samples in your samplesheet, or by other means
+<div class="highlight"><pre><span></span><code>head<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span>samplesheet.csv<span class="w"> </span>&gt;<span class="w"> </span>samplesheet_4.csv
+</code></pre></div></p>
+</li>
+<li>
+<p>Run Nextflow on limited samples
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">NXF_ENABLE_CACHE_INVALIDATION_ON_TASK_DIRECTIVE_CHANGE</span><span class="o">=</span><span class="nb">false</span>
+nextflow<span class="w"> </span>run<span class="w"> </span>...<span class="w"> </span>--input<span class="w"> </span>samplesheet_4.csv
+</code></pre></div></p>
+</li>
+<li>
+<p>Generate resources.config (limited to ~120GB, 12 hours)
+<div class="highlight"><pre><span></span><code>nf-optimizer<span class="w"> </span>-m<span class="w"> </span><span class="m">500</span><span class="w"> </span><span class="m">120000</span><span class="w"> </span>-t<span class="w"> </span><span class="m">300</span><span class="w"> </span><span class="m">43200</span><span class="w"> </span>-o<span class="w"> </span>resources.config<span class="w"> </span>.
+</code></pre></div></p>
+</li>
+<li>
+<p>Run Nextflow on all samples
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">NXF_ENABLE_CACHE_INVALIDATION_ON_TASK_DIRECTIVE_CHANGE</span><span class="o">=</span><span class="nb">false</span>
+nextflow<span class="w"> </span>run<span class="w"> </span>...<span class="w"> </span>--input<span class="w"> </span>samplesheet.csv<span class="w"> </span>-c<span class="w"> </span>resources.config<span class="w"> </span>-resume
+</code></pre></div></p>
+</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Nextflow Tower supports optimization based on a specific previous run. Click on a run in your history, navigate to "Optimization Available", and copy the configuration.</p>
+<p><figure markdown>
+    <a class="glightbox" href="../../assets/tower-optimization.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../assets/tower-optimization.png" width="400" /></a>
+    <figcaption>Nextflow Tower built in optimization</figcaption>
+</figure></p>
+</div>
+</div>
+</div>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../first_steps/" class="md-footer__link md-footer__link--prev" aria-label="Previous: First Steps" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                First Steps
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../guide/nf_core_rnaseq/" class="md-footer__link md-footer__link--next" aria-label="Next: Running nf-core/RNA-Seq" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                Running nf-core/RNA-Seq
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.tabs", "navigation.footer", "navigation.instant", "navigation.top", "announce.dismiss", "content.code.annotate", "content.tabs.link", "content.action.edit", "header.autohide"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
